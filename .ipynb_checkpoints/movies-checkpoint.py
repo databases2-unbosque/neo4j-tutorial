@@ -10,8 +10,8 @@ app = Flask(__name__, static_url_path = "/static/")
 
 # Try to load database connection info from environment
 url = os.getenv("NEO4J_URI", "bolt://localhost:7687")
-username = os.getenv("NEO4J_USER", "neo4j2")
-password = os.getenv("NEO4J_PASSWORD", "neo4j2")
+username = os.getenv("NEO4J_USER", "neo4j")
+password = os.getenv("NEO4J_PASSWORD", "123456")
 neo4jVersion = os.getenv("NEO4J_VERSION", "4")
 database = os.getenv("NEO4J_DATABASE", "neo4j")
 port = os.getenv("PORT", 8080)
